@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GeneratedForm, FormData, FormErrors } from '../types/form';
+import type { GeneratedForm, FormData, FormErrors } from '../types/form';
 import { FormField } from './FormField';
 
 interface DynamicFormProps {

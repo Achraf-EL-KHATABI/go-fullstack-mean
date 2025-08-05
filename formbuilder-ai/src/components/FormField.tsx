@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormField as FormFieldType, FormData, FormErrors } from '../types/form';
+import type { FormField as FormFieldType } from '../types/form';
 
 interface FormFieldProps {
   field: FormFieldType;

@@ -1,4 +1,4 @@
-import { GeneratedForm } from '../types/form';
+import type { GeneratedForm } from '../types/form';
 
 // Mock API pour simuler l'appel à OpenAI
 export const generateFormFromPrompt = async (prompt: string): Promise<GeneratedForm> => {
@@ -123,11 +123,11 @@ export const generateFormFromPrompt = async (prompt: string): Promise<GeneratedF
   const lowerPrompt = prompt.toLowerCase();
   
   if (lowerPrompt.includes('contact') || lowerPrompt.includes('contacter')) {
-    return formTemplates.contact;
+    return formTemplates.contact!;
   } else if (lowerPrompt.includes('enquête') || lowerPrompt.includes('satisfaction') || lowerPrompt.includes('sondage')) {
-    return formTemplates.survey;
+    return formTemplates.survey!;
   } else if (lowerPrompt.includes('inscription') || lowerPrompt.includes('événement') || lowerPrompt.includes('register')) {
-    return formTemplates.registration;
+    return formTemplates.registration!;
   }
 
   // Formulaire générique par défaut

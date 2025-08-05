@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { generateFormFromPrompt } from '../lib/openai-mock';
-import { GeneratedForm } from '../types/form';
+import type { GeneratedForm } from '../types/form';
 
 interface FormGeneratorProps {
   onFormGenerated: (form: GeneratedForm) => void;

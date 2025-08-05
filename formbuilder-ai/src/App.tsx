@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { HomePage } from './pages/HomePage';
 import { FormGenerator } from './components/FormGenerator';
 import { DynamicForm } from './components/DynamicForm';
-import { GeneratedForm, FormData } from './types/form';
+import type { GeneratedForm, FormData } from './types/form';
 
 type AppState = 'home' | 'generator' | 'form' | 'success';
 
